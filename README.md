@@ -4,6 +4,13 @@ echo 1>/proc/sys/net/ipv4/ip_forward
 
 cat /proc/sys/net/ipv4/ip_forward
 
+#Or
+
+sysctl net.ipv4.ip_forward status
+sysctl -w net.ipv4.ip_forward=1
+
+
+
 block=0
 unblock=1
 
